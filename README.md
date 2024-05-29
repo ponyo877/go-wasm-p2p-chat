@@ -3,7 +3,7 @@ A chat application that utilizes the WebRTC P2P DataChannel implemented with Go 
 
 https://p2p-chat.pages.dev
 
-<img src="./chat-screen.png" width="250">
+<img src="./chat-screen.png" width="300">
 
 ## Backend Service
 Deploy the following services as backend services:
