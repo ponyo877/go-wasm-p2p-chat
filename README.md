@@ -1,7 +1,9 @@
 # go-wasm-p2p-chat
-⚗️Implemented P2P chat using WebRTC P2P DataChannel in Go WebAssembly⚗️
+A chat application that utilizes the WebRTC P2P DataChannel implemented with Go WebAssembly, allowing you to match and converse with random strangers.
 
 https://p2p-chat.pages.dev
+
+![chat screen](./chat-screen.png)
 
 ## License
 The source code used in `go-ayame` directory are licensed under the following licenses:
