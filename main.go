@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/pion/webrtc/v3"
-	"github.com/ponyo877/go-wasm-p2p-chat/ayame"
+	"github.com/ponyo877/go-wasm-p2p-chat/go-ayame"
 
 	"nhooyr.io/websocket"
 	"nhooyr.io/websocket/wsjson"
