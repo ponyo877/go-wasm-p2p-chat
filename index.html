@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WebRTC P2P DataChannel Chat</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+</head>
+
+<body>
+    <header class="sticky row">
+        <h4>WebRTC P2P DataChannel Chat</h4>
+    </header>
+    <div>
+        <p><button onclick="window.startNewChat()" class="secondary">START</button></p>
+        <input id="message" type="text" value="Hello 🐶"></input>
+        <button onclick="window.sendMessage()" class="primary">SEND</button>
+        <h4>RECORD</h4>
+        <textarea style="height:600px;width:600px;" id="logs" disabled type="text" value=""></textarea>
+    </div>
+</body>
+
+</html>
+
+<script src="/wasm_exec.js"></script>
+<script>
+    const go = new Go();
+    WebAssembly.instantiateStreaming(fetch("demo.wasm"), go.importObject).then((result) => {
+        go.run(result.instance);
+    });
+</script>
