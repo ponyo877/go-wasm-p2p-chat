@@ -3,7 +3,15 @@ A chat application that utilizes the WebRTC P2P DataChannel implemented with Go 
 
 https://p2p-chat.pages.dev
 
-![chat screen](./chat-screen.png)
+<img src="./chat-screen.png" width="250">
+
+## Backend Service
+Deploy the following services as backend services:
+- https://github.com/ponyo877/easy-matchmaking
+  - Matchmaking server to connect users
+- https://github.com/OpenAyame/ayame
+  - Signaling server for WebRTC connections
+
 
 ## License
 The source code used in `go-ayame` directory are licensed under the following licenses:
